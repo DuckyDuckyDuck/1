@@ -21,9 +21,9 @@ tests_require = [
     'pytest-cov',
     ]
 
-setup(name='autograph',
+setup(name='shop_toys',
       version='0.0',
-      description='autograph',
+      description='shop_toys',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
           "Programming Language :: Python",
