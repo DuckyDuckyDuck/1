@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 from pyramid.config import Configurator
-from autograph.resources import get_root
+from shop_toys.resources import get_root
 from pyramid.session import SignedCookieSessionFactory
 from sqlalchemy import inspect
 from pyramid.authentication import AuthTktAuthenticationPolicy
@@ -17,13 +17,13 @@ class MyFactory(object):
     def __init__(self, request):
         self.__acl__ = [(Allow, Authenticated, "add")]
 
-my_session_factory = SignedCookieSessionFactory('autograph')
+my_session_factory = SignedCookieSessionFactory('shop_toys')
 
 def main(global_config, **settings):
     Base.metadata.create_all()
 
     settings = dict(settings)
-    settings.setdefault('jinja2.i18n.domain', 'autograph')
+    settings.setdefault('jinja2.i18n.domain', 'shop_toys')
 
     config = Configurator(root_factory=MyFactory, settings=settings, session_factory=my_session_factory)
     config.include('pyramid_jinja2')
