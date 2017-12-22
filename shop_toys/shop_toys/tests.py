@@ -2,7 +2,7 @@ import unittest
 from pyramid import testing
 from pyramid.i18n import TranslationStringFactory
 
-_ = TranslationStringFactory('autograph')
+_ = TranslationStringFactory('shop_toys')
 
 
 class ViewTests(unittest.TestCase):
@@ -14,7 +14,7 @@ class ViewTests(unittest.TestCase):
         testing.tearDown()
 
     def test_my_view(self):
-        from autograph.views import my_view
+        from shop_toys.views import my_view
         request = testing.DummyRequest()
         response = my_view(request)
-        self.assertEqual(response['project'], 'autograph')
+        self.assertEqual(response['project'], 'shop_toys')
