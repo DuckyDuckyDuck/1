@@ -1,0 +1,15 @@
+CHANGES.txt
+MANIFEST.in
+README.txt
+development.ini
+message-extraction.ini
+pytest.ini
+setup.cfg
+setup.pyshop_toys/__init__.py
+shop_toys/models.py
+shop_toys/resources.py
+shop_toys/tests.py
+shop_toys/views.py
+shop_toys.egg-info/PKG-INFO
+shop_toys.egg-info/SOURCES.txt
+shop_toys.egg-info/dependency_links.txtshop_toys.egg-info/entry_points.txtshop_toys.egg-info/not-zip-safeshop_toys.egg-info/requires.txtshop_toys.egg-info/top_level.txtshop_toys/static/css/bootstrap-theme.cssshop_toys/static/css/bootstrap-theme.min.cssshop_toys/static/css/bootstrap.cssshop_toys/static/css/bootstrap.min.cssshop_toys/static/css/style.cssshop_toys/static/images/1.jpgshop_toys/static/images/2.jpgshop_toys/static/images/3.jpgshop_toys/static/images/4.jpgshop_toys/static/images/back.jpgshop_toys/static/images/backBottom.jpgshop_toys/static/images/backRepeat.jpgshop_toys/static/images/backTop.jpgshop_toys/static/images/background.jpgshop_toys/static/images/left.jpgshop_toys/static/images/table1.jpgshop_toys/static/images/table2.jpgshop_toys/static/images/table3.jpgshop_toys/static/images/table4.jpgshop_toys/static/images/table5.jpgshop_toys/static/images/table6.jpgshop_toys/static/js/bootstrap.jsshop_toys/static/js/bootstrap.min.jsshop_toys/static/js/forma.jsshop_toys/templates/addComment.jinja2shop_toys/templates/addTable.jinja2shop_toys/templates/admin.jinja2shop_toys/templates/adminEditComment.jinja2shop_toys/templates/adminEditTable.jinja2shop_toys/templates/adminEditTableEdit.jinja2shop_toys/templates/arenda.jinja2shop_toys/templates/base.jinja2shop_toys/templates/contacts.jinja2shop_toys/templates/goodReg.jinja2shop_toys/templates/index.jinja2shop_toys/templates/logIn.jinja2shop_toys/templates/register.jinja2shop_toys/templates/responce.jinja2shop_toys/templates/timeTable.jinja2

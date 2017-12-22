@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+	<title>Каталог товаров</title>
+	<meta charset="utf-8">
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css/bootstrap.css" rel="stylesheet">
+	<link href="static/css/style.css" rel="stylesheet" >
+</head>
+<body >		
+			<div class="row">
+				<ul class="nav nav-justified list">
+					<li class="li">
+					<img src="/static/images/logo.jpg" width="100" height="100">
+					</li>
+					<li class="li">
+						<a class="a" href="/">Главная</a>
+					</li>
+					<li class="li">
+						<a class="a" href="/responces.html">Отзывы</a>
+					</li>
+					<li class="li">
+						<a class="a" href="/goods.html">Товары</a>
+					</li>
+					<li class="li">
+						<a class="a" href="/adresses.html">Наши магазины</a>
+					</li>
+					{% if username != none %}
+						<li class="li">
+						    <form action="logOut.html">
+								{{ username }}
+						    		<input type="submit" value="Выйти">
+						    </form>
+						</li>		
+						    {% else %}
+							<li class="li">
+								<a class="a " href="/logIn.html">Войти</a>
+								<a class="a " href="/register.html">Регистрация</a>
+							</li>
+						    {% endif %}
+				</ul>
+			</div>
+			{% block data %} {% endblock %}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+</body>
+</html>
