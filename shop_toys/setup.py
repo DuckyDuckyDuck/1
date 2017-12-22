@@ -44,6 +44,6 @@ setup(name='shop_toys',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = autograph:main
+      main = shop_toys:main
       """,
       )
